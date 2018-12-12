@@ -12,6 +12,9 @@
 		DDDFA1BF21C0B5250026B4BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDDFA1BD21C0B5250026B4BA /* Main.storyboard */; };
 		DDDFA1C121C0B5260026B4BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDDFA1C021C0B5260026B4BA /* Assets.xcassets */; };
 		DDDFA1C421C0B5260026B4BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDDFA1C221C0B5260026B4BA /* LaunchScreen.storyboard */; };
+		DDDFA1CC21C0DD170026B4BA /* SpringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDFA1CB21C0DD170026B4BA /* SpringViewController.swift */; };
+		DDDFA1CE21C0ECAC0026B4BA /* SummerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDFA1CD21C0ECAC0026B4BA /* SummerViewController.swift */; };
+		DDDFA1D021C0ECC50026B4BA /* FallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDFA1CF21C0ECC50026B4BA /* FallViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		DDDFA1C021C0B5260026B4BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDDFA1C321C0B5260026B4BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDDFA1C521C0B5260026B4BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDDFA1CB21C0DD170026B4BA /* SpringViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringViewController.swift; sourceTree = "<group>"; };
+		DDDFA1CD21C0ECAC0026B4BA /* SummerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummerViewController.swift; sourceTree = "<group>"; };
+		DDDFA1CF21C0ECC50026B4BA /* FallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FallViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +63,11 @@
 				DDDFA1B921C0B5250026B4BA /* AppDelegate.swift */,
 				DDDFA1BB21C0B5250026B4BA /* ViewController.swift */,
 				DDDFA1BD21C0B5250026B4BA /* Main.storyboard */,
-				DDDFA1C021C0B5260026B4BA /* Assets.xcassets */,
+				DDDFA1CB21C0DD170026B4BA /* SpringViewController.swift */,
+				DDDFA1CD21C0ECAC0026B4BA /* SummerViewController.swift */,
+				DDDFA1CF21C0ECC50026B4BA /* FallViewController.swift */,
 				DDDFA1C221C0B5260026B4BA /* LaunchScreen.storyboard */,
+				DDDFA1C021C0B5260026B4BA /* Assets.xcassets */,
 				DDDFA1C521C0B5260026B4BA /* Info.plist */,
 			);
 			path = Snowflake;
@@ -136,7 +145,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDDFA1BC21C0B5250026B4BA /* ViewController.swift in Sources */,
+				DDDFA1D021C0ECC50026B4BA /* FallViewController.swift in Sources */,
+				DDDFA1CE21C0ECAC0026B4BA /* SummerViewController.swift in Sources */,
 				DDDFA1BA21C0B5250026B4BA /* AppDelegate.swift in Sources */,
+				DDDFA1CC21C0DD170026B4BA /* SpringViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

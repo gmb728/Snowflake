@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Njv-ZF-qCy">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,254 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Snowflake" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="olaf" translatesAutoresizingMaskIntoConstraints="NO" id="S4A-fL-qyX">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vcj-0t-Aae">
+                                <rect key="frame" x="20" y="759" width="46" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="fEK-hX-kqP">
+                                <rect key="frame" x="72" y="712" width="324" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="qtyAdded:" destination="BYZ-38-t0r" eventType="valueChanged" id="6FM-xJ-QMf"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Q'ty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unI-s5-o1R">
+                                <rect key="frame" x="20" y="712" width="55" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="3c8-uP-lKO">
+                                <rect key="frame" x="72" y="759" width="324" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sizeEnlarged:" destination="BYZ-38-t0r" eventType="valueChanged" id="GrE-Vh-HqG"/>
+                                </connections>
+                            </slider>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="S4A-fL-qyX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1lv-ym-rKq"/>
+                            <constraint firstItem="S4A-fL-qyX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="SBV-P7-fWU"/>
+                            <constraint firstItem="S4A-fL-qyX" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="fot-i0-WI8"/>
+                            <constraint firstItem="S4A-fL-qyX" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="zrb-XY-mMW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="DBt-EQ-fxX"/>
+                    <connections>
+                        <outlet property="olafImageView" destination="S4A-fL-qyX" id="PcC-k9-1Il"/>
+                        <outlet property="qtySlider" destination="fEK-hX-kqP" id="0ZS-zV-5WO"/>
+                        <outlet property="sizeSlider" destination="3c8-uP-lKO" id="K41-xi-EtR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1789.8550724637682" y="787.5"/>
+        </scene>
+        <!--Spring View Controller-->
+        <scene sceneID="5ZC-Oz-FKS">
+            <objects>
+                <viewController id="9fZ-3Z-S2S" customClass="SpringViewController" customModule="Snowflake" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g5P-Zs-m6l">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spring" translatesAutoresizingMaskIntoConstraints="NO" id="W8p-SW-Lsl">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="W8p-SW-Lsl" firstAttribute="trailing" secondItem="g5P-Zs-m6l" secondAttribute="trailing" id="JN8-GK-CIO"/>
+                            <constraint firstAttribute="bottom" secondItem="W8p-SW-Lsl" secondAttribute="bottom" id="Nxc-Gn-Dt0"/>
+                            <constraint firstItem="W8p-SW-Lsl" firstAttribute="leading" secondItem="g5P-Zs-m6l" secondAttribute="leading" id="Rin-mk-hcY"/>
+                            <constraint firstItem="W8p-SW-Lsl" firstAttribute="top" secondItem="g5P-Zs-m6l" secondAttribute="top" id="b8H-eu-Ekv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="g8y-lc-y41"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gip-Zx-KzD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kcl-yg-xda" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1790" y="1479"/>
+        </scene>
+        <!--Summer View Controller-->
+        <scene sceneID="IAT-cZ-9RH">
+            <objects>
+                <viewController id="D9B-xG-I4J" customClass="SummerViewController" customModule="Snowflake" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9u7-AE-DAk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="summer-olaf" translatesAutoresizingMaskIntoConstraints="NO" id="oz2-KH-9le">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oz2-KH-9le" firstAttribute="top" secondItem="9u7-AE-DAk" secondAttribute="top" id="FYs-8f-g5S"/>
+                            <constraint firstItem="oz2-KH-9le" firstAttribute="leading" secondItem="9u7-AE-DAk" secondAttribute="leading" id="Wuj-h6-eDy"/>
+                            <constraint firstAttribute="bottom" secondItem="oz2-KH-9le" secondAttribute="bottom" id="tUm-F8-OYf"/>
+                            <constraint firstItem="oz2-KH-9le" firstAttribute="trailing" secondItem="9u7-AE-DAk" secondAttribute="trailing" id="vf1-en-gJh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DU0-py-sny"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="D7d-HM-O0V"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zTp-h6-gMO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1790" y="2278"/>
+        </scene>
+        <!--Fall View Controller-->
+        <scene sceneID="qbl-yZ-rVL">
+            <objects>
+                <viewController id="YaV-ot-XpW" customClass="FallViewController" customModule="Snowflake" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VGm-ap-9l4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fall" translatesAutoresizingMaskIntoConstraints="NO" id="EYZ-L2-wpN">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EYZ-L2-wpN" firstAttribute="top" secondItem="VGm-ap-9l4" secondAttribute="top" id="0ky-gp-nGI"/>
+                            <constraint firstItem="EYZ-L2-wpN" firstAttribute="trailing" secondItem="VGm-ap-9l4" secondAttribute="trailing" id="NWd-vB-Yvh"/>
+                            <constraint firstAttribute="bottom" secondItem="EYZ-L2-wpN" secondAttribute="bottom" id="brQ-YR-kbt"/>
+                            <constraint firstItem="EYZ-L2-wpN" firstAttribute="leading" secondItem="VGm-ap-9l4" secondAttribute="leading" id="tpe-zu-y02"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fHr-kU-gZd"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yzx-LF-pas"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ogd-Se-Czb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1790" y="3031"/>
+        </scene>
+        <!--Winter-->
+        <scene sceneID="XJ1-jg-B6a">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="l5A-Sw-CMQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Winter" image="snowflake" selectedImage="snow-flake" id="qaa-jp-SFI">
+                        <color key="badgeColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fp2-0O-3DO">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="vnc-fV-LAd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SnB-H5-AI7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="997.10144927536237" y="787.5"/>
+        </scene>
+        <!--Spring-->
+        <scene sceneID="gTL-6n-uvv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3qZ-5m-Vkz" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Spring" image="flower" selectedImage="flower" id="EhH-Sv-mjm">
+                        <color key="badgeColor" red="1" green="0.52120530610000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3Oi-gs-v9t">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9fZ-3Z-S2S" kind="relationship" relationship="rootViewController" id="r40-ky-XTd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gvI-kc-4TR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="997" y="1521"/>
+        </scene>
+        <!--Summer-->
+        <scene sceneID="Mk7-0S-nrn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QPM-nz-XGp" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Summer" image="water" selectedImage="water" id="DRg-eQ-Qr4"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dQJ-Wy-kn7">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="D9B-xG-I4J" kind="relationship" relationship="rootViewController" id="Y9C-zN-WP9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dSm-7W-f1e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1035" y="2294"/>
+        </scene>
+        <!--Fall-->
+        <scene sceneID="Gm7-G5-1Ej">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JT2-WU-VKu" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Fall" image="pine-tree" selectedImage="pine-tree" id="q8c-Xn-Nd2"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="luX-L6-G5l">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YaV-ot-XpW" kind="relationship" relationship="rootViewController" id="vMu-cz-i3m"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qZx-eT-Qik" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1035" y="3031"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="waP-LK-Jfr">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Njv-ZF-qCy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rgd-it-pRo">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="l5A-Sw-CMQ" kind="relationship" relationship="viewControllers" id="BSo-Bl-ZWk"/>
+                        <segue destination="3qZ-5m-Vkz" kind="relationship" relationship="viewControllers" id="LgS-zK-zik"/>
+                        <segue destination="QPM-nz-XGp" kind="relationship" relationship="viewControllers" id="Ne5-O8-qhV"/>
+                        <segue destination="JT2-WU-VKu" kind="relationship" relationship="viewControllers" id="Qre-nR-gHz"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6HH-dS-bhc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-309" y="2001"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="fall" width="564" height="502"/>
+        <image name="flower" width="30" height="30"/>
+        <image name="olaf" width="1536" height="2733"/>
+        <image name="pine-tree" width="30" height="30"/>
+        <image name="snow-flake" width="29" height="30"/>
+        <image name="snowflake" width="12.800000190734863" height="12.800000190734863"/>
+        <image name="spring" width="540" height="670"/>
+        <image name="summer-olaf" width="550" height="777"/>
+        <image name="water" width="30" height="30"/>
+    </resources>
 </document>
